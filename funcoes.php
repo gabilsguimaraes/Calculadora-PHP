@@ -26,8 +26,14 @@
                     break;
         
                 case '!':
-                    return fatorial($numero1);
-                    break;
+                    if ($numero1 == 0) {
+                        return 1;
+                    } elseif ($numero1 < 0) {
+                        return '∄';
+                    } else {
+                        return fatorial($numero1);
+                        break;
+                    }
             }
         }
     }
